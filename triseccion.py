@@ -3,7 +3,7 @@ import math
 def creciente( low , high ):
     x = (high + low)/2
     y = funcion(x)
-    if( y > -0.00001 and y<0.00001):
+    if( y > -0.000000001 and y<0.000000001):
         return x
     if(y > 0):
         return creciente( low , x )
@@ -14,7 +14,7 @@ def creciente( low , high ):
 def decreciente( low , high ):
     x = (high + low)/2
     y = funcion(x)
-    if( y > -0.0000001 and y<0.0000001):
+    if( y > -0.000000001 and y<0.000000001):
         return x
     if(y < 0):
         return decreciente( low , x )
@@ -30,7 +30,7 @@ def tri(low , high):
 
     #evalua la funcion en la mitad
     y = funcion ( (low + high )/2)
-    if (y > -0.0000001 and y < 0.0000001):
+    if (y > -0.000000001 and y < 0.000000001):
         return ((low + high)/2)
 
 
@@ -56,7 +56,7 @@ def cua(low , high):
 
     # evalua la funcion en la mitad
     y = funcion((low + high) / 2)
-    if (y > -0.0000001 and y < 0.0000001):
+    if (y > -0.000000001 and y < 0.000000001):
         return ((low + high) / 2)
 
     # si la funcion cambia de signo en la primera particion, mando la recursion por ahi
