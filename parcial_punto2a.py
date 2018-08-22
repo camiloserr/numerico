@@ -35,9 +35,11 @@ def func(x1 , x2):
 #se escogieron los valores iniciales por media de la grafica de las dos funciones
 
 try:
-    print(func(-2 , -1));
+    print(func(-1.9 , -1));
 except RuntimeError as re:
     print ("el algoritmo no converge con esos valores ")
+    
+#la respuesta es  x = -1.6314435969682324
 
 #este metodo con esta funcion es extremadamente sensible a los valores iniciales
 
