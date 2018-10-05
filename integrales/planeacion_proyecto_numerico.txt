@@ -1,0 +1,17 @@
+Proyecto Analisis Numérico
+
+Solución de ecuaciones no lineales:
+
+Para la libreria de solución de ecuaciones no lineales planeamos incluir los siguientes algoritmos para encontrar raices:
+
+-Bisección: Dada una ecuación, se construye una función  a la cual se le pueda aplicar el metodo de la bisección
+ en los intervalos que sea necesario para necontrar todas la raices, solucionando la ecuación. 
+
+-Trisección: Similar al método de bisección pero se evalúan tres particiones en lugar de dos.
+
+-Newton-rapson: Dada una ecuación y un valor inicial, el algoritmo debe verificar que la ecuación tenga una derivada analítica
+ ya que esta se utiliza para encontrar la solución, luego construye una función a la cual le pueda encontrar raices y retorna 
+ la solución.
+
+-Punto fjijo: Dada una función f(x) y un intervalo (a,b), este método genera la función inversa g(x) y un valor inicial xi para retornar el punto 
+ fijo r donde g(r)=0 y f(r)=0 en un intervalo (a,b).
