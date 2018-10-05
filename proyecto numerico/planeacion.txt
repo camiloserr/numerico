@@ -1,17 +1,19 @@
-Proyecto Analisis Num閞ico
+Proyecto Analisis Num茅rico
 
-Soluci髇 de ecuaciones no lineales:
+Por Daniel Mendoza y Camilo Serrano
 
-Para la libreria de soluci髇 de ecuaciones no lineales planeamos incluir los siguientes algoritmos para encontrar raices:
+Soluci贸n de ecuaciones no lineales:
 
--Bisecci髇: Dada una ecuaci髇, se construye una funci髇  a la cual se le pueda aplicar el metodo de la bisecci髇
- en los intervalos que sea necesario para necontrar todas la raices, solucionando la ecuaci髇. 
+Para la libreria de soluci贸n de ecuaciones no lineales planeamos incluir los siguientes algoritmos para encontrar raices:
 
--Trisecci髇: Similar al m閠odo de bisecci髇 pero se eval鷄n tres particiones en lugar de dos.
+-Bisecci贸n: Dada una ecuaci贸n, se construye una funci贸n  a la cual se le pueda aplicar el metodo de la bisecci贸n
+ en los intervalos que sea necesario para necontrar todas la raices, solucionando la ecuaci贸n. 
 
--Newton-rapson: Dada una ecuaci髇 y un valor inicial, el algoritmo debe verificar que la ecuaci髇 tenga una derivada anal韙ica
- ya que esta se utiliza para encontrar la soluci髇, luego construye una funci髇 a la cual le pueda encontrar raices y retorna 
- la soluci髇.
+-Trisecci贸n: Similar al m茅todo de bisecci贸n pero se eval煤an tres particiones en lugar de dos.
 
--Punto fjijo: Dada una funci髇 f(x) y un intervalo (a,b), este m閠odo genera la funci髇 inversa g(x) y un valor inicial xi para retornar el punto 
+-Newton-rapson: Dada una ecuaci贸n y un valor inicial, el algoritmo debe verificar que la ecuaci贸n tenga una derivada anal铆tica
+ ya que esta se utiliza para encontrar la soluci贸n, luego construye una funci贸n a la cual le pueda encontrar raices y retorna 
+ la soluci贸n.
+
+-Punto fjijo: Dada una funci贸n f(x) y un intervalo (a,b), este m茅todo genera la funci贸n inversa g(x) y un valor inicial xi para retornar el punto 
  fijo r donde g(r)=0 y f(r)=0 en un intervalo (a,b).
