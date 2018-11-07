@@ -1,24 +1,31 @@
-bisec <- function(f , a , b ){
-  epsilon = 0.0001
+
+bisec <- function(f , a , b , epsilon){
+  if(missing(epsilon)){
+    epsilon = 0.0001
+  }
 
   c<-(a+b)/2;
-  while(f(c)!=0 && b-a> epsilon)
+  while(f(c)!=0 && b-a > epsilon)
   {
-   
-    if(f(c)<0)
+    
+    if( (f(a) * f(b)) > 0){
+      stop('Existe mas de una raiz en este intervalo')
+    }
+    
+    if(f(c) * f(a) <0)
     {
-      a<-c
+      b<-c
     }
     else
     {
-      b=c
+      a<-c
     }
-    {
-      c<-(a+b)/2;
-    }
+    
+    c<-(a+b)/2;
+    
   }
   
-  if(abs(f(c) ) <= epsilon ){
+  if(abs(f(c) ) < epsilon ||  b-a < epsilon){
     return(c)
   }
   else{
@@ -26,10 +33,11 @@ bisec <- function(f , a , b ){
   }
 }
 
+
 f<-function(x){
-  return ( sin(x) )
+  return ( sin(x))
 }
 
-plot(f,-6,6)
-x <- (bisec(f , -pi/2 , pi/2));
-print(x)
+print(bisec(f , 0.1 ,50 ));
+
+
