@@ -5,14 +5,9 @@ sec <- function(f , x1 , x2){
 
 }
 
-secante <- function(f , ant , xi, error){
-  if(missing(error))
-  {
-    epsilon = 0.0001;
-  }
-  else
-  {
-    epsilon = error;
+secante <- function(f , ant , xi, epsilon){
+  if(missing(epsilon)){
+    epsilon = 0.0001
   }
   it = 0;
 
@@ -26,7 +21,7 @@ secante <- function(f , ant , xi, error){
     #print(sec(f , xi , ant));
 
     if( abs (f(xi) ) < epsilon){
-      print(E);
+      cat("error: ", E , "\n");
       return (xi);
     }
     it <- it+1;

@@ -9,7 +9,7 @@ bisec <- function(f , a , b , epsilon){
   {
 
     if( (f(a) * f(b)) > 0){
-      stop('Existe mas de una raiz en este intervalo')
+      stop('Existe mas de una raiz o no existe ninguna en este intervalo')
     }
 
     if(f(c) * f(a) <0)
