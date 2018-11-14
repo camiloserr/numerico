@@ -1,0 +1,12 @@
+Package: raices
+Type: Package
+Title: Encuentra Raices De Funciones Continuas
+Version: 0.1.0
+Author: Daniel Mendoza y Camilo Serrano
+Maintainer: Camilo Serrano <camiloserrano@javeriana.edu.co>
+Description: Este paquete tiene implementados dos metodods para encontrar raices:
+    Biseccion: 
+    Metodo de la secante:
+License: GPL
+Encoding: UTF-8
+LazyData: true
